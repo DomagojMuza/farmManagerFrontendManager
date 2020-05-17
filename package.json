@@ -1,0 +1,42 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "nodemon --exec babel-node src/index.js",
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/runtime": "^7.9.6",
+    "axios": "^0.19.2",
+    "babel-preset-env": "^1.7.0",
+    "bcryptjs": "^2.4.3",
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "cron": "^1.8.2",
+    "express": "^4.17.1",
+    "googleapis": "^48.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "mongodb": "^3.5.5",
+    "mongoose": "^5.9.6",
+    "nodemailer": "^6.4.6",
+    "pdfkit": "^0.11.0",
+    "pdfmake": "^0.1.65",
+    "request": "^2.88.2",
+    "utf8": "^3.0.0",
+    "validator": "^13.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/preset-env": "^7.9.0",
+    "nodemon": "^2.0.2"
+  }
+}
