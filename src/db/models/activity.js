@@ -44,6 +44,6 @@ ActivitySchema.pre('save', async function(next){
     next()
 })
 
-const Activity = new mongoose.model('Activity', ActivitySchema)
+var Activity = new mongoose.model('Activity', ActivitySchema)
 
-module.exports = {Activity};
+module.exports = Activity;

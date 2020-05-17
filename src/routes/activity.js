@@ -1,5 +1,5 @@
 const express = require('express')
-const {Activity} = require('../db/models/activity.js')
+const Activity = require('../db/models/activity.js')
 
 var ActivityRoute = new express.Router()
 

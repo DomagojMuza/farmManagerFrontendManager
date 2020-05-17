@@ -19,23 +19,23 @@ FieldRoute.post('/api/fields', async (req, res) =>{
 
 //sva polja za logiranog usera
 FieldRoute.get('/api/fields', async (req, res) =>{
-    const match = {}
-    console.log("usao u fields");
-    console.log("field", req.query.title);
-    if(req.query.title != 'undefined' && req.query.title != null){
-        let sea = new RegExp(`^.*${req.query.title}.*$`, "img")
-        match['$or'] = [{"name": sea}, {"culture": sea}]
-        console.log("field mat", match);
-    }
-    // match[req.query.poCemu] = {[req.query.filter]: req.query.value}
+    // const match = {}
+    // console.log("usao u fields");
+    // console.log("field", req.query.title);
+    // if(req.query.title != 'undefined' && req.query.title != null){
+    //     let sea = new RegExp(`^.*${req.query.title}.*$`, "img")
+    //     match['$or'] = [{"name": sea}, {"culture": sea}]
+    //     console.log("field mat", match);
+    // }
+    // // match[req.query.poCemu] = {[req.query.filter]: req.query.value}
 
     try {
-        var allFields = await Field.find({}, null,
-            {
-                limit: parseInt(req.query.limit) || 5,
-                skip: parseInt(req.query.skip) * 5 || 0
-            }
-        );
+        // var allFields = await Field.find({}, null,
+        //     {
+        //         limit: parseInt(req.query.limit) || 5,
+        //         skip: parseInt(req.query.skip) * 5 || 0
+        //     }
+        // );
         //oboje radi isto
         // await req.user.populate({
         //     path: 'fields',
@@ -46,11 +46,11 @@ FieldRoute.get('/api/fields', async (req, res) =>{
         //     }
         // }).execPopulate()
 
-        if(req.query.short === 'true'){
-            allFields = allFields.map(({_id, name}) => { return {_id, name}})
-            console.log("nakon svega ",allFields);
-        }
-        res.send(allFields)
+        // if(req.query.short === 'true'){
+        //     allFields = allFields.map(({_id, name}) => { return {_id, name}})
+        //     console.log("nakon svega ",allFields);
+        // }
+        res.send("mozda ce sada raditi")
     } catch (error) {
         res.status(500).send({error: error.message})
     }   
