@@ -1,5 +1,5 @@
 const express = require('express')
-const {Activity} = require('../db/models/activity.js')
+const Activity = require('../db/models/activity.js')
 const moment = require('moment')
 const PdfPrinter = require('pdfmake')
 
@@ -8,7 +8,7 @@ var PDFRoute = new express.Router()
 
 PDFRoute.get('/api/pdf', async (req, res) =>{
 
-    const allActivities = await Activity.find({ 
+    var allActivities = await Activity.find({ 
         $and: [
             {scheduledAt: {$gt: req.query.from}},
             {scheduledAt: {$lt: req.query.to}}
