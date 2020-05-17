@@ -3,7 +3,7 @@ const {Activity} = require('../db/models/activity.js')
 const moment = require('moment')
 const PdfPrinter = require('pdfmake')
 
-const PDFRoute = new express.Router()
+var PDFRoute = new express.Router()
 
 
 PDFRoute.get('/api/pdf', async (req, res) =>{
