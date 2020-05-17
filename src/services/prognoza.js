@@ -62,4 +62,4 @@ const vrijemeNarednihDana = (mjesto, callback) =>{
 
 }
 
-exports = {trenutnoVrijeme: trenutnoVrijeme, vrijemeNarednihDana: trenutnoVrijeme}
+module.exports = {trenutnoVrijeme: trenutnoVrijeme, vrijemeNarednihDana: vrijemeNarednihDana}

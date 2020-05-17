@@ -24,4 +24,4 @@ const vijesti = async (page)=>{
     return news
 }
 
-exports = {vijesti}
+module.exports = vijesti
