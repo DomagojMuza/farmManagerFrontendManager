@@ -30,7 +30,7 @@
     "pdfmake": "^0.1.65",
     "request": "^2.88.2",
     "utf8": "^3.0.0",
-    "validator": "^13.0.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
