@@ -22,7 +22,7 @@
     "express": "^4.17.1",
     "googleapis": "^48.0.0",
     "jsonwebtoken": "^8.5.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "mongodb": "^3.5.5",
     "mongoose": "^5.9.6",
     "nodemailer": "^6.4.6",
